@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Node Js</title>
+        <link href="../assets/styles.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <!-- To Include Navigation as Partial Template -->
+        <%- include('partials/nav.ejs') -%>
+        <h2>Contact Page</h2>
+        <div>
+            <a href="/">Click here to go back to home page</a>
+        </div>
+        <div>
+            <form id="contact-form" method="POST" action="/contact">
+                <label for="who">Who you want to contact ?</label>
+                <input type="text" name="who" value="<%= queryData.person %>" />
+                <label for="dept">Which Department ?</label>
+                <input type="text" name="dept" value="<%= queryData.dept %>" />
+                <input type="submit" value="submit" />
+            </form>
+        </div>
+    </body>
+</html>

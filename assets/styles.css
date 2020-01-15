@@ -1,0 +1,18 @@
+body {
+  background: #ffffff;
+  color: #130b0b;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+label {
+    display: block;
+    color: blue;
+    font-size: 14px;
+    font-style: italic;
+}
+
+input {
+    display: block;
+    width: 200px;
+    height: 30px;
+}
