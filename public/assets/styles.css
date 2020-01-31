@@ -12,7 +12,17 @@ label {
 }
 
 input {
-    display: block;
-    width: 200px;
+    width: 400px;
     height: 30px;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  cursor: pointer;
+}
+
+ul > li {
+  color: black;
+  font-style: italic;
 }

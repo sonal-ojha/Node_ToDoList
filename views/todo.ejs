@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Node Js</title>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+        <link href="/assets/styles.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>
+            TODO List Items :-
+        </h1>
+        <div id="todo-table">
+            <form>
+                <input type="text" id="todo_item" placeholder="Please add the item here..." required/>
+                <button onclick="onSubmitToDo()">
+                    ADD TODO
+                </button>
+            </form>
+            <ul id="todo-list-items">
+                <% for (var i=0; i< todos.length; i++) { %>
+                    <li>
+                        <%= todos[i].item %>
+                        <button id=<%= i %> >Delete</button>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+        <script src="/assets/todo-list.js"></script>
+    </body>
+</html>
