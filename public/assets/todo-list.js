@@ -11,13 +11,12 @@ function onSubmitToDo() {
         }
     )
     .then(res => res.json())
-    .then(result => result)
+    .then(result => window.location.reload('http://localhost:3001'))
 }
 
 // locate your element and add the Click Event Listener
 document.getElementById("todo-list-items").addEventListener("click",function(e) {
     // e.target is our targetted element.
-    console.log(e.target.nodeName);
     if(e.target && e.target.nodeName == "BUTTON") {
         const deleteID = e.target.id;
         fetch(`http://localhost:3001/todo/${deleteID}`, 

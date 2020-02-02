@@ -19,7 +19,7 @@
                 <% for (var i=0; i< todos.length; i++) { %>
                     <li>
                         <%= todos[i].item %>
-                        <button id=<%= i %> >Delete</button>
+                        <button id=<%= todos[i].item %> >Delete</button>
                     </li>
                 <% } %>
             </ul>
